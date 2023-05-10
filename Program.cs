@@ -40,6 +40,14 @@ namespace Linq
             var count = sortedEmployees.Count();
             Console.WriteLine("Number of employees: {0}", count);
 
+            //Min method. 
+            var minSalary = sortedEmployees.Min(e => e.Salary);
+            Console.WriteLine("Minimum salary: {0:C}", minSalary);
+
+            //Max method. 
+            var maxSalary = sortedEmployees.Max(e => e.Salary);
+            Console.WriteLine("Maximum salary: {0:C}", maxSalary); 
+
             Console.ReadLine(); 
 
         }
