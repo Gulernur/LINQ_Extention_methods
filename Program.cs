@@ -21,7 +21,13 @@ namespace Linq
                 new Employee { Name = "Isabelle", Department = "Sales", Salary = 55000.00m };
                 new Employee { Name = "Jack", Department = "Sales", Salary = 48000.00m };
             }
-            
+
+            //Where method. 
+            var salesEmployees = employees.Where(e => e.Department == "Sales");
+
+
+            Console.ReadLine(); 
+
         }
     }
 
