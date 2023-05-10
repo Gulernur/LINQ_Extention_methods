@@ -36,6 +36,9 @@ namespace Linq
             var lastEmployee = sortedEmployees.Last(); 
             Console.WriteLine("Last employee: {0} ({1}, {2:C})", lastEmployee.Name, lastEmployee.Department, lastEmployee.Salary);
 
+            //Count method. 
+            var count = sortedEmployees.Count();
+            Console.WriteLine("Number of employees: {0}", count);
 
             Console.ReadLine(); 
 
